@@ -1,4 +1,3 @@
-//salinas
 #include <iostream>
 using namespace std;
 
