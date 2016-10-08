@@ -7,7 +7,7 @@ int main(){
 	ifstream f("input.txt");
 	int num;
 	
-	while (f>>num){}
+	f>>num;
   cout << "The number from the file is: " <<num<< endl;
 	system ("pause > 0");
 }
