@@ -3,8 +3,7 @@
 
 #include <iostream>
 
-class Tricycle
-{
+class Tricycle{
 public:
 	int getSpeed();
 	void setSpeed(int speed);
@@ -15,47 +14,41 @@ private:
 };
 
 
-int Tricycle::getSpeed()
-{
-return speed;
+int Tricycle::getSpeed(){
+	return speed;
 }
 
 // apply the brake on the trike
-void Tricycle::brake()
-{
-setSpeed(speed - 1);
-std::cout << "\nBreaking; tricycle speed " << speed << " mph\n";
+void Tricycle::brake(){
+	setSpeed(speed - 1);
+	std::cout << "\nBreaking; tricycle speed " << speed << " mph\n";
 }
 
 
-void Tricycle::setSpeed(int newSpeed)
-{
-if (newSpeed >= 0)
-{
-speed = newSpeed;
-}
+void Tricycle::setSpeed(int newSpeed){
+	if (newSpeed >= 0){
+		speed = newSpeed;
+	}
 }
 
 // pedal the trike
-void Tricycle::pedal()
-{
-setSpeed(speed + 1);
-std::cout <<"\nPedaling; tricycle speed " << speed << " mph\n";
+void Tricycle::pedal(){
+	setSpeed(speed + 1);
+	std::cout <<"\nPedaling; tricycle speed " << speed << " mph\n";
 }
 
 // create a trike and ride it
 
-int main()
-{
-Tricycle waley;
-waley.setSpeed(0);
-waley.pedal();
-waley.pedal();
-waley.brake();
-waley.brake();
-waley.brake();
+int main(){
+	Tricycle trike;
+	trike.setSpeed(0);
+	trike.pedal();
+	trike.pedal();
+	trike.brake();
+	trike.brake();
+	trike.brake();
 
-system("pause>NULL");
-return 0;
+	system("pause>NULL");
+	return 0;
 }
 
