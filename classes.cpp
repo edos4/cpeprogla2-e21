@@ -1,5 +1,3 @@
-// classes.cpp : Defines the entry point for the console // application.
-// Date created: April 26, 2011
 
 #include <iostream>
 
